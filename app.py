@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import pickle
 
-# বাংলা ফন্ট ও কাস্টম স্টাইল inject করা
 st.markdown(
     """
     <style>
@@ -26,10 +25,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Model লোড
 model = pickle.load(open('rainfall_model.pkl', 'rb'))
 
-# Language select
+
 lang = st.sidebar.selectbox("Select Language / ভাষা নির্বাচন করুন", ["English", "বাংলা"])
 
 if lang == "English":
