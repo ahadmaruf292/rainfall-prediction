@@ -140,3 +140,5 @@ if st.button(predict_btn):
             st.info(rain_no)
     except Exception as e:
         st.error(error_msg + str(e))
+st.markdown("---")
+st.markdown("Built by **Ahad Maruf** using Streamlit & Machine Learning.")
